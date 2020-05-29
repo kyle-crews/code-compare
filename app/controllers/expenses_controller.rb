@@ -63,7 +63,7 @@ class ExpensesController < ApplicationController
   patch '/expenses/:id' do
     if !params[:description].empty? && !params[:amount].empty? && !params[:date].empty?
       @expense = Expense.find(params[:id])
-      @expense.update(description:params[:description], amount:params[:amount], date:params[:date])
+      @expense.update(description:params[:description], amount:params[:amount], category:params[:date])
       @category = current_user.categories.find_by(name:params[:category_name])
       @expense.category_id = @category.id
       @expense.save

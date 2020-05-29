@@ -213,7 +213,7 @@
       // Show the slide at a certain position
     , show: function (newIndex) {
 
-        // Validate index
+        // Valicategory index
         if (Math.abs(newIndex) > this.images.length - 1) {
           return;
         }

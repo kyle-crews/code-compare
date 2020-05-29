@@ -6,9 +6,10 @@ class Quantifiable
       self.expenses.collect {|expense| expense.amount}.sum
     end
 
-    def expenses_sort_by_date
+    def expenses_sort_by_category
       self.expenses.sort_by {|expense| expense[:date]}.reverse
     end
+
   end
 
 end
