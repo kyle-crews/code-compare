@@ -13,11 +13,11 @@
       <tr class="info">
         <th><h3>Description</h3></th>
         <th><h3>Amount</h3></th>
+        <th><h3>Date</h3></th>
         <th><h3>Category</h3></th>
-        <th><h3>Entry Category</h3></th>
         <th><h3></h3></th>
       </tr>
-        <% current_user.expenses_sort_by_category.each do |expense| %>
+        <% current_user.expenses_sort_by_date.each do |expense| %>
           <tr style="text-align:left;">
             <td><a href="expenses/<%= expense.id %>"><%= expense.description %></a></td>
             <td>$ <%= expense.amount %></td>

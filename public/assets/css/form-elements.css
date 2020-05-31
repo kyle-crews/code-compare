@@ -11,7 +11,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="expense"],
-input[type="category"],
+input[type="date"],
 textarea,
 textarea.form-control {
 	height: 50px;

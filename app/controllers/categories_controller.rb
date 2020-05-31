@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
   # does not let a user create a blank category
   post '/categories' do
     if params[:name].empty?
-      flash[:message] = "Please Enter a Category"
+      flash[:message] = "Please Enter a Category Name"
       redirect_to_categories
     else
       @user = current_user
