@@ -1,4 +1,4 @@
-<h1 style="color: white; margin: 30px 10px;">Hi, <%= current_user.username.capitalize %>.<br> <%= Time.now.strftime("Tomorrow is %A") %> // You have <strong><%= current_user.total_amount %> tasks</strong></h1>
+<h1 style="color: white; margin: 30px 10px;">Hi, <%= current_user.username.capitalize %> your total expenses are $<%= current_user.total_amount %></h1>
 
 <div class="container" >
   <div class="row">

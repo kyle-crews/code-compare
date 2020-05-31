@@ -19,8 +19,8 @@
         <% @category.expenses_sort_by_date.each do |expense| %>
           <tr style="text-align:left;">
             <td><%= expense.description %></td>
-            <td>$ <%= expense.date %></td>
-            <td><%= expense.category %></td>
+            <td>$ <%= expense.amount %></td>
+            <td><%= expense.date %></td>
             <td><a href="expenses/<%= expense.id %>/edit">Edit <span class="glyphicon glyphicon-pencil"></span></a></td>
           </tr>
         <% end %>

@@ -48,7 +48,7 @@
             <form  action="/categories" method="post" >
               <div class="form-group">
                 <label class="sr-only" for="form-description">Name</label>
-                <input class="form-name" type="date" name="name"  placeholder="YYYY-MM-DD" value ="<%= Time.now.strftime('%F') %>" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" title="Enter a category in this formart YYYY-MM-DD"/>
+                <input type="text" name="name" placeholder="Category Name..." class="form-name form-control" id="form-name" >
               </div> <!-- end form-group -->
               <button type="submit" class="btn btn-success">Create</button>
             </form> <!-- end form-->
